@@ -1,89 +1,63 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<style>
-
-/*
-    div
-    {
-        background-color: rgb(198, 211, 162);
-    }
-        */
-
-    .container
-    {
-        padding: 5px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
-    }
-
-    .kieu1
-    {
-        width: 300px;
-        height: 20px;
-        border: rgb(120, 18, 129) 1px solid;
-        border-radius: 5%;
-
-    }
-
-
-</style>
-
-<script>
-    function kiemtra()
-    {
-        alert('Success');
-
-    }
-
-</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
+    <div class="container">
+        <form id="registration_form">
 
-    <form id="register_form" onsubmit="kiemtra();">
+            <h1>Register</h1>
 
-    <div id="container1" style="width: 100%; display: flex; justify-content: center;">
-
-        <div id="noidung" style="width: 1000px; height: 500px; background-color: beige; ">
-
-            <h1>Register Form</h1>
-
-            <div class="container">
-            <input id="username" type="text" class="kieu1"></input>
-
+            <!--username-->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input id="username" type="text"  placeholder="Enter Username">
+                <!--""-->
+                <small></small>
             </div>
 
-            <div class="container">
-
-            <input id="email" type="text" class="kieu1"></input>
+            <!--email-->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email"  placeholder="Enter Email">
+                <!--""-->
+                <small></small>
+            </div>
+            
+            <!--password-->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" type="password"  placeholder="Enter Password">
+                <!--""-->
+                <small></small>
             </div>
 
-            <div class="container">
-
-            <input id="password" type="password" class="kieu1"></input>
+            <!--confirmpassword-->
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" type="password"  placeholder="Confirm your password">
+                <!---->
+                <small></small>
             </div>
 
+            <!--Register-->
 
-            <div class="container">
+                <button type="submit">Register</button>
 
-            <input id="confirmpassword" type="password" class="kieu1" ></input>
-            </div>
-
-             <div class="container">
-
-            <button id="bntregister" type="submit" value="Register">Register</button>
-
-            </div>
-        </div>
+        </form>
         
 
     </div>
 
-    </form>
+    <script src="index.js"></script>
             
-
+    
 
 </body>
 
