@@ -55,7 +55,7 @@
 
     </div>
 
-    <script src="index.js"></script>
+    <script src="register.js"></script>
             
     
 
