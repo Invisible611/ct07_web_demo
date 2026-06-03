@@ -22,7 +22,7 @@ form.addEventListener("submit", function(e) {
     }
 
     if (isFormValid) {
-        alert("Registration successful!");
+        alert("Registration Success");
         form.reset();
         document.querySelectorAll(".form-group").forEach((group) =>{ group.className = "form-group";
         });
