@@ -1,3 +1,4 @@
-servlet/ChuyendoiSevlet2.class
 servlet/ChuyendoiSevlet.class
 servlet/loginServlet.class
+servlet/ChuyendoiSevlet2.class
+servlet/processRequest.class
