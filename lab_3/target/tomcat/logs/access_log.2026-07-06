@@ -31,3 +31,6 @@
 0:0:0:0:0:0:0:1 - - [06/Jul/2026:12:30:08 +0000] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 2
 0:0:0:0:0:0:0:1 - - [06/Jul/2026:12:30:11 +0000] "GET /login.jsp HTTP/1.1" 200 542 http-bio-8080-exec-5 4
 0:0:0:0:0:0:0:1 - - [06/Jul/2026:12:30:19 +0000] "POST /$%7BpageContext.request.contextPath%7D/login HTTP/1.1" 404 1039 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:13:04:49 +0000] "GET / HTTP/1.1" 200 2260 http-bio-8080-exec-1 52
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:13:04:57 +0000] "GET /login.jsp HTTP/1.1" 200 501 http-bio-8080-exec-3 561
+0:0:0:0:0:0:0:1 - - [06/Jul/2026:13:05:02 +0000] "POST /login HTTP/1.1" 200 803 http-bio-8080-exec-5 306
