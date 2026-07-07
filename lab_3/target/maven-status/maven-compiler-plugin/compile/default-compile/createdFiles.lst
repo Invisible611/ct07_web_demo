@@ -4,5 +4,6 @@ model/Product.class
 dao/UserDAO.class
 controller/LoginServlet.class
 model/User.class
+controller/AddProductServlet.class
 controller/LogoutServlet.class
 util/HashUtil.class

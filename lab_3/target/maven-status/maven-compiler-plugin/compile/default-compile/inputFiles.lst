@@ -3,6 +3,7 @@
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/dao/UserDAO.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/model/Product.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/model/User.java
+/workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/AddProductServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/LoginServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/LogoutServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/util/HashUtil.java
