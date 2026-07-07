@@ -31,10 +31,14 @@
     </style>
 </head>
 <body>
-
-<h2>DANH SÁCH SẢN PHẨM</h2>
-
 <%
+    // Kiểm tra đã đăng nhập chưa
+    if (session.getAttribute("user") == null) {
+        response.sendRedirect("login.jsp");
+        return;
+    }
+
+    // Lấy danh sách sản phẩm
     List<Product> list = (List<Product>) request.getAttribute("list");
 
     if (list == null) {
@@ -42,6 +46,20 @@
         return;
     }
 %>
+
+<div style="width:80%;margin:20px auto;text-align:right;">
+
+    Xin chào:
+    <b><%= session.getAttribute("user") %></b>
+    <a href="add.jsp">➕ Thêm sản phẩm</a>
+
+    |
+
+    <a href="logout">Đăng xuất</a>
+
+</div>
+
+<h2>DANH SÁCH SẢN PHẨM</h2>
 
 <table>
     <tr>
@@ -52,6 +70,7 @@
         <th>Quantity Per Unit</th>
         <th>Unit Price</th>
         <th>Units In Stock</th>
+        <th>Action</th>
     </tr>
 
 <%
@@ -75,4 +94,5 @@
 </table>
 
 </body>
+
 </html>

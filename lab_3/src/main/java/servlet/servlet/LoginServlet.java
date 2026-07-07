@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
@@ -18,7 +19,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         String username = request.getParameter("user");
         String password = request.getParameter("pass");
 
@@ -26,10 +27,13 @@ public class LoginServlet extends HttpServlet {
 
         if (dao.login(username, password)) {
 
+            // Lưu thông tin người dùng vào Session
+            HttpSession session = request.getSession();
+            session.setAttribute("user", username);
+
             ProductDAO pdao = new ProductDAO();
 
-            request.setAttribute("list",
-                    pdao.getAllProducts());
+            request.setAttribute("list", pdao.getAllProducts());
 
             request.getRequestDispatcher("sanpham.jsp")
                     .forward(request, response);
@@ -45,5 +49,4 @@ public class LoginServlet extends HttpServlet {
         }
 
     }
-
 }
