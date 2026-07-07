@@ -19,8 +19,6 @@ public class LoginServlet extends HttpServlet {
             HttpServletResponse response)
             throws ServletException, IOException {
         
-        System.out.println("LoginServlet đã được gọi");
-        
         String username = request.getParameter("user");
         String password = request.getParameter("pass");
 
