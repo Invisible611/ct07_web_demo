@@ -79,7 +79,16 @@ input{
 .back{
     background:#6c757d;
 }
-
+.error{
+    background:#fdecea;
+    color:#c62828;
+    border:1px solid #f5c2c7;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+}
 </style>
 
 </head>
@@ -89,37 +98,71 @@ input{
 <div class="container">
 
 <h2>THÊM SẢN PHẨM</h2>
+<%
+    String error = (String) request.getAttribute("error");
+    if (error != null) {
+%>
 
+<div class="error">
+    <%= error %>
+</div>
+
+<%
+    }
+%>
 <form action="add" method="post">
 
 <div class="form-group">
 <label>Tên sản phẩm</label>
-<input type="text" name="name">
+<input type="text"
+       name="name"
+       required
+       maxlength="40">
+
 </div>
 
 <div class="form-group">
 <label>Supplier ID</label>
-<input type="number" name="supplier">
+<input type="number"
+       name="supplier"
+       required
+       min="1">
 </div>
 
 <div class="form-group">
 <label>Category ID</label>
-<input type="number" name="category">
+<input type="number"
+       name="category"
+       required
+       min="1">
 </div>
 
 <div class="form-group">
 <label>Quantity Per Unit</label>
-<input type="text" name="quantity">
+<input type="text"
+       name="quantity"
+       required
+       pattern=".{1,30}"
+       title="Không được để trống và tối đa 30 ký tự">
+
 </div>
 
 <div class="form-group">
 <label>Unit Price</label>
-<input type="number" step="0.01" name="price">
+<input type="number"
+       name="price"
+       required
+       min="0"
+       step="0.01">
+
 </div>
 
 <div class="form-group">
 <label>Units In Stock</label>
-<input type="number" name="stock">
+<input type="number"
+       name="stock"
+       required
+       min="0">
 </div>
 
 <div class="button-group">

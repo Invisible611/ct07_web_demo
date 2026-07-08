@@ -95,7 +95,16 @@ input:focus{
 .btn:hover{
     opacity:.85;
 }
-
+.error{
+    background:#fdecea;
+    color:#c62828;
+    border:1px solid #f5c2c7;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:20px;
+    text-align:center;
+    font-weight:bold;
+}
 </style>
 
 </head>
@@ -105,6 +114,18 @@ input:focus{
 <div class="container">
 
 <h2>SỬA SẢN PHẨM</h2>
+<%
+    String error = (String) request.getAttribute("error");
+    if (error != null) {
+%>
+
+<div class="error">
+    <%= error %>
+</div>
+
+<%
+    }
+%>
 
 <form action="edit" method="post">
 
