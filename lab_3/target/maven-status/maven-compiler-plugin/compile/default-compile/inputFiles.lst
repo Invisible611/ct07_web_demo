@@ -5,6 +5,7 @@
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/model/User.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/AddProductServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/DeleteProductServlet.java
+/workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/EditProductServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/LoginServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/LogoutServlet.java
 /workspaces/ct07_web_demo/lab_3/src/main/java/servlet/servlet/ProductServlet.java

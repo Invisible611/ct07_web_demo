@@ -3,6 +3,7 @@ controller/ProductServlet.class
 dao/ProductDAO.class
 model/Product.class
 dao/UserDAO.class
+controller/EditProductServlet.class
 controller/LoginServlet.class
 model/User.class
 controller/DeleteProductServlet.class

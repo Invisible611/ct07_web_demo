@@ -71,3 +71,14 @@
 0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:28:46 +0000] "GET /add HTTP/1.1" 200 977 http-bio-8080-exec-8 4
 0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:28:49 +0000] "GET /add HTTP/1.1" 200 977 http-bio-8080-exec-10 1
 0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:28:51 +0000] "GET /$%7BpageContext.request.contextPath%7D/product HTTP/1.1" 404 1043 http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:37:19 +0000] "GET / HTTP/1.1" 200 2260 http-bio-8080-exec-1 47
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:37:21 +0000] "GET /login.jsp HTTP/1.1" 200 501 http-bio-8080-exec-3 18
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:37:27 +0000] "POST /login HTTP/1.1" 200 32793 http-bio-8080-exec-5 230
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:37:32 +0000] "GET /edit?id=82 HTTP/1.1" 200 959 http-bio-8080-exec-7 474
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:37:45 +0000] "POST /edit HTTP/1.1" 200 32793 http-bio-8080-exec-9 361
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:37:57 +0000] "GET /edit?id=82 HTTP/1.1" 200 959 http-bio-8080-exec-8 8
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:38:00 +0000] "POST /edit HTTP/1.1" 200 32794 http-bio-8080-exec-2 20
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:38:07 +0000] "GET /edit?id=82 HTTP/1.1" 200 960 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:38:10 +0000] "POST /edit HTTP/1.1" 200 32794 http-bio-8080-exec-6 39
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:38:21 +0000] "GET /add HTTP/1.1" 200 977 http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [08/Jul/2026:07:39:04 +0000] "GET /$%7BpageContext.request.contextPath%7D/product HTTP/1.1" 404 1043 http-bio-8080-exec-3 3
