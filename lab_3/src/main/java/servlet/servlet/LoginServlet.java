@@ -31,7 +31,10 @@ public class LoginServlet extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("user", username);
 
-            response.sendRedirect(request.getContextPath() + "/product");
+        ProductDAO pdao = new ProductDAO();
+        request.setAttribute("list", pdao.getAllProducts());
+        request.getRequestDispatcher("sanpham.jsp")
+            .forward(request, response);
 
         } else {
 

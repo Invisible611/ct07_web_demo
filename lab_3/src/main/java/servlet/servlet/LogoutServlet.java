@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
@@ -10,7 +11,7 @@ public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response)
-            throws IOException {
+            throws ServletException, IOException {
 
         HttpSession session = request.getSession(false);
 
@@ -18,6 +19,7 @@ public class LogoutServlet extends HttpServlet {
             session.invalidate();
         }
 
-        response.sendRedirect("login.jsp");
+        request.getRequestDispatcher("/login.jsp")
+            .forward(request, response);
     }
 }
