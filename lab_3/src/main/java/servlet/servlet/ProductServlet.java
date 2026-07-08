@@ -11,11 +11,10 @@ import javax.servlet.http.*;
 public class ProductServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request,
+   protected void doGet(HttpServletRequest request,
             HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Kiểm tra đăng nhập
         HttpSession session = request.getSession(false);
 
         if (session == null || session.getAttribute("user") == null) {

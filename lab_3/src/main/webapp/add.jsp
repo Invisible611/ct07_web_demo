@@ -72,9 +72,7 @@
 
 <br>
 
-<a href="${pageContext.request.contextPath}/product">
-    Quay lại danh sách
-</a>
+<a href="product">Quay lại danh sách</a>
 
 </body>
 

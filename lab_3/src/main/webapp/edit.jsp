@@ -73,5 +73,7 @@ Product p = (Product)request.getAttribute("product");
 
 </form>
 
+<a href="product">Quay lại danh sách</a>
+
 </body>
 </html>
