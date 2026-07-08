@@ -57,14 +57,11 @@ public class AddProductServlet extends HttpServlet {
         boolean ok = dao.insert(p);
 
         if (ok) {
-        request.setAttribute("list", dao.getAllProducts());
-        request.getRequestDispatcher("sanpham.jsp")
-           .forward(request, response);
+        response.sendRedirect(request.getContextPath() + "/product");
         } else {
         request.setAttribute("error", "Thêm sản phẩm thất bại!");
         request.getRequestDispatcher("add.jsp")
-           .forward(request, response);
-
+            .forward(request, response);
         }
 
     }

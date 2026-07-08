@@ -51,11 +51,18 @@
 
     Xin chào:
     <b><%= session.getAttribute("user") %></b>
-    <a href="add.jsp">➕ Thêm sản phẩm</a>
 
     |
 
-    <a href="logout">Đăng xuất</a>
+    <a href="${pageContext.request.contextPath}/add">
+        ➕ Thêm sản phẩm
+    </a>
+
+    |
+
+    <a href="${pageContext.request.contextPath}/logout">
+        Đăng xuất
+    </a>
 
 </div>
 
@@ -85,6 +92,19 @@
         <td><%= p.getQuantityPerUnit() %></td>
         <td><%= p.getUnitPrice() %></td>
         <td><%= p.getUnitsInStock() %></td>
+
+        <td>
+            <a href="${pageContext.request.contextPath}/edit?id=<%= p.getProductID() %>">
+            Sửa
+            </a>
+
+
+
+            <a href="${pageContext.request.contextPath}/delete?id=<%= p.getProductID() %>"
+            onclick="return confirm('Bạn có chắc muốn xóa?')">
+            Xóa
+            </a>
+        </td>
     </tr>
 
 <%

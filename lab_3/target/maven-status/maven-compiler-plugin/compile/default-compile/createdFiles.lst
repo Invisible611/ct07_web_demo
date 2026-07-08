@@ -1,4 +1,5 @@
 context/DBContext.class
+controller/ProductServlet.class
 dao/ProductDAO.class
 model/Product.class
 dao/UserDAO.class
